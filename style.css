@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/*### Primary
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+*/
+
+ul{
+    list-style-type: none;
+    color: hsla(216, 63%, 97%, 0.591); 
+}
+
+body{
+    font-family:"Karla", sans-serif;
+    font-size: 16px;
+    background-color: hsla(218, 57%, 88%, 0.726);
+    padding: 1.25rem;
+}
+
+
+
+.btn{
+    background-color:  hsl(71, 73%, 54%);
+    color: #fff;
+    font-family: inherit;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+p,
+li{
+    line-height: 1.6;
+}
+
+p.green{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.container{
+    border-radius:0.625rem;
+    overflow: hidden;
+    box-shadow: 6px 6px 30px 6px  hsl(217, 57%, 72%);
+}
+
+/*---------Primeira caixa---------*/
+.container > article:first-child{
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+/*---------Titulo da caixa 1---------*/
+.container > article:first-child h1{
+    color:hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+}   
+
+.container > article:first-child p{
+    margin-bottom: 1rem;
+} 
+
+.container > article:first-child p:last-child{
+    color:hsla(218, 20%, 65%, 0.888); 
+} 
+
+.container section{
+    display: flex;
+    flex-direction: column; 
+}
+
+.container section article{
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.container section article:first-child{
+    background-color:hsl(179, 77%, 35%);
+}
+
+.container section article:first-child h2{
+    margin-bottom: 1rem;
+}
+
+.container section article:first-child h3{
+    color: hsla(219, 33%, 90%, 0.582);
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+
+.container section article:first-child h3 span{
+    color:#fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.container section article:first-child p{
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.728);
+}
+
+.container section article:last-child{
+    background-color:hsl(179, 62%, 49%);
+    border-bottom-right-radius: 0.625rem;
+    border-bottom-left-radius: 0;
+   
+}
+
+.container section article:last-child h2{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .container{
+        width: 700px;
+        margin: auto;
+    }
+    .container > article:first-child h1{
+      font-size: 2rem;  
+    }   
+    .container section{
+        flex-direction: row;
+    }
+    .container section article:first-child{
+        flex: 1;
+        
+    }
+    .container section article:last-child{
+        flex: 1;
+        
+    }
+
+}
+
+
